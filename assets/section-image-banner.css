@@ -489,51 +489,5 @@
   .banner--desktop-transparent .rte a:hover {
     color: currentColor;
   }
-  .fullscreen-banner {
-  height: 100vh !important;
-  min-height: 100vh !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.fullscreen-banner .banner__media {
-  height: 100% !important;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.fullscreen-banner .banner__media img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.fullscreen-banner .banner__content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-  padding: 2rem;
-  text-align: center;
-}
-
-.fullscreen-banner .banner__box {
-  color: white;
-}
-
-@media (max-width: 749px) {
-  .fullscreen-banner .banner__content {
-    padding: 1.5rem;
-  }
-
-  .fullscreen-banner .banner__box h2,
-  .fullscreen-banner .banner__box p {
-    font-size: 1.4rem;
-  }
-}
+  
 }

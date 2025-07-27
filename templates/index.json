@@ -35,6 +35,10 @@
         "heading",
         "button"
       ],
+      "custom_css": [
+        ".image-banner {height: 100vh !important; min-height: 100vh !important; max-height: 100vh !important; overflow: hidden; position: relative;}",
+        ".image-banner__media img {height: 100%; width: 100%; object-fit: cover; object-position: center;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/photo-1572250801423-af46c2f5c8c7.jpg",
         "image_overlay_opacity": 40,

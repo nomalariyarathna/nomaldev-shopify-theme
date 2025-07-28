@@ -105,7 +105,9 @@
     },
     "discount_banner": {
       "type": "discount-banner",
-      "settings": {}
+      "settings": {
+        "steal_video": "shopify://files/videos/925c2b34bc1e42eca943dda6cbe5ceb5.HD-720p-4.5Mbps-51904629.mp4"
+      }
     }
   },
   "order": [

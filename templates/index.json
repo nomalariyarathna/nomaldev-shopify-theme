@@ -56,7 +56,7 @@
         "video": "shopify://files/videos/global_adizero_evo_sl_running_fw25_launch_franchise_plp_banner_snippet_d_58add5fc95.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 36
@@ -105,9 +105,7 @@
     },
     "discount_banner": {
       "type": "discount-banner",
-      "settings": {
-        "steal_video": "shopify://files/videos/925c2b34bc1e42eca943dda6cbe5ceb5.HD-720p-4.5Mbps-51904629.mp4"
-      }
+      "settings": {}
     }
   },
   "order": [

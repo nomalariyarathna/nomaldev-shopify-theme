@@ -1,43 +1,58 @@
 <div class="nd-steal-banner">
   {% if section.settings.steal_video != blank %}
-    <video class="nd-steal-video" autoplay loop muted playsinline>
+    <video 
+      class="nd-steal-video"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+    >
       <source src="{{ section.settings.steal_video | file_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  {% else %}
+    <div class="nd-video-fallback">
+      <p>Video not available. Please upload a valid MP4.</p>
+    </div>
   {% endif %}
 
   <div class="nd-discount-text">
-    <h2>🔥 Limited Time Offer – 20% OFF All Shoes!</h2>
+    <h2>🔥 <span class="highlight">Limited Time Offer – 20% OFF All Shoes!</span></h2>
     <p>Use code <strong>GET20</strong> at checkout.</p>
   </div>
 </div>
 
 <style>
 .nd-steal-banner {
-  text-align: center;
-  padding: 20px;
   background: #000;
-  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
 }
 
 .nd-steal-video {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
 }
 
 .nd-discount-text h2 {
-  font-size: 28px;
-  margin: 0;
-  color: #fff200;
+  font-size: 26px;
+  color: #ffd700;
+  margin-bottom: 10px;
 }
 
 .nd-discount-text p {
   font-size: 18px;
-  margin-top: 8px;
-  color: #ffffff;
+  color: #fff;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
 }
 </style>
 
@@ -48,7 +63,7 @@
     {
       "type": "video",
       "id": "steal_video",
-      "label": "Upload Steal Deal Video"
+      "label": "Upload Steal Deal Video (MP4 preferred)"
     }
   ],
   "presets": [

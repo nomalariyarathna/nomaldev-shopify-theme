@@ -1,63 +1,54 @@
-<div class="nd-discount-banner">
-  <div class="nd-discount-content">
-    <!-- Left Image -->
-    <div class="nd-discount-image">
-      {% if section.settings.discount_image != blank %}
-        <img src="{{ section.settings.discount_image | image_url: width: 400 }}" alt="Discount Banner Image">
-      {% endif %}
-    </div>
+<div class="nd-steal-banner">
+  {% if section.settings.steal_video != blank %}
+    <video class="nd-steal-video" autoplay loop muted playsinline>
+      <source src="{{ section.settings.steal_video | file_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  {% endif %}
 
-    <!-- Right Text -->
-    <div class="nd-discount-text">
-      <h2>🔥 Limited Time Offer – 20% OFF All Shoes!</h2>
-      <p>Use code <strong>GET20</strong> at checkout.</p>
-    </div>
+  <div class="nd-discount-text">
+    <h2>🔥 Limited Time Offer – 20% OFF All Shoes!</h2>
+    <p>Use code <strong>GET20</strong> at checkout.</p>
   </div>
 </div>
 
 <style>
-.nd-discount-banner {
-  background: #fffbcc;
+.nd-steal-banner {
+  text-align: center;
   padding: 20px;
+  background: #000;
+  color: white;
 }
 
-.nd-discount-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.nd-discount-image img {
-  max-width: 200px;
+.nd-steal-video {
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-}
-
-.nd-discount-text {
-  text-align: left;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .nd-discount-text h2 {
+  font-size: 28px;
   margin: 0;
-  font-size: 24px;
+  color: #fff200;
 }
 
 .nd-discount-text p {
-  margin: 5px 0 0;
   font-size: 18px;
+  margin-top: 8px;
+  color: #ffffff;
 }
 </style>
 
 {% schema %}
 {
-  "name": "Discount Banner",
+  "name": "Steal Deal Video Banner",
   "settings": [
     {
-      "type": "image_picker",
-      "id": "discount_image",
-      "label": "Discount Image"
+      "type": "video",
+      "id": "steal_video",
+      "label": "Upload Steal Deal Video"
     }
   ],
   "presets": [

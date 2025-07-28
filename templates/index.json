@@ -107,11 +107,11 @@
       "type": "discount-banner",
       "settings": {}
     },
-    "featured_blog_zwwW3V": {
+    "featured_blog_73GKVn": {
       "type": "featured-blog",
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "Style & Gear Guide",
         "heading_size": "h1",
         "blog": "style-gear-guide",
         "post_limit": 3,
@@ -131,6 +131,6 @@
     "video_wpGDfc",
     "collection_list_fA4iGG",
     "discount_banner",
-    "featured_blog_zwwW3V"
+    "featured_blog_73GKVn"
   ]
 }
